@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Ask Experts</title>
+    <link rel="stylesheet" href="scss/reapet-styles/reapet-styles.scss">
+    <link rel="stylesheet" href="scss/style/case-studies.scss">
+</head>
+
+<body class="page__body">
+    <!-- loader start -->
+    <div class="loader-box">
+        <span class="loader"></span>
+    </div>
+    <!-- loader end -->
+
+    <!-- header section start -->
+    <special-header></special-header>
+    <!-- header section end -->
+
+    <main class="main">
+        <div class="main__overlay"></div>
+        <!-- hero section start -->
+        <section class="hero" style="background-image: url(img/caseBg.jpeg);
+        background-image: image-set(url(img/caseBg.webp) type('image/webp'));
+        background-repeat: no-repeat;
+        background-size: cover">
+            <div class="hero__container container">
+                <special-hero title="Case Studies" subtitle="case studies"></special-hero>
+            </div>
+        </section>
+        <div class="hero__tabs container">
+            <ul class="hero__tabs-list list-reset">
+                <li class="hero__tabs-item">
+                    <span class="hero__tabs-subtitle">
+                        All
+                    </span>
+                </li>
+                <li class="hero__tabs-item">
+                    <span class="hero__tabs-subtitle">
+                        Taxes & Efficiency
+                    </span>
+                </li>
+                <li class="hero__tabs-item">
+                    <span class="hero__tabs-subtitle">
+                        Investment banking
+                    </span>
+                </li>
+                <li class="hero__tabs-item">
+                    <span class="hero__tabs-subtitle">
+                        Financial Plan
+                    </span>
+                </li>
+                <li class="hero__tabs-item">
+                    <span class="hero__tabs-subtitle">
+                        Audit & Evaluation
+                    </span>
+                </li>
+            </ul>
+            <ul class="clients__list list-reset">
+                <special-clients img-url = "img/CaseImg1.jpeg"></special-clients>
+                <special-clients img-url = "img/proccessImg2.jpeg"></special-clients>
+                <special-clients img-url = "img/proccessImg4.jpeg"></special-clients>
+                <special-clients img-url = "img/CaseImg3.jpeg"></special-clients>
+                <special-clients img-url = "img/CaseImg4.jpeg"></special-clients>
+                <special-clients img-url = "img/CaseImg5.jpeg"></special-clients>
+            </ul>
+        </div>
+        <!-- hero section end -->
+
+        <!-- contact section start -->
+        <section class="contact">
+            <div class="contact__container container">
+                <contact-us></contact-us>
+                <contact-form></contact-form>
+            </div>
+        </section>
+        <!-- contact section end -->
+    </main>
+
+    <!-- footer section start -->
+    <special-footer></special-footer>
+    <!-- footer section end -->
+
+    <script src="components/contactUs/contactUs.js" type="module"></script>
+    <script src="components/contactForm/contactForm.js" type="module"></script>
+    <script src="components/clients/clients.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Ask Experts</title>
+    <link rel="stylesheet" href="scss/reapet-styles/reapet-styles.scss">
+    <link rel="stylesheet" href="scss/style/team-single.scss">
+</head>
+
+<body class="page__body">
+    <!-- loader start -->
+    <div class="loader-box">
+        <span class="loader"></span>
+    </div>
+    <!-- loader end -->
+
+    <!-- header section start -->
+    <special-header></special-header>
+    <!-- header section end -->
+
+    <main class="main">
+        <div class="main__overlay"></div>
+        <!-- hero section start -->
+        <section class="hero">
+            <div class="hero__container container">
+                <div class="hero__img-box">
+                    <img class="hero__Pattern img" src="img/Pattern.png" alt="Pattern" loading="lazy">
+                    <span class="hero__green"></span>
+                    <picture class="hero__picture">
+                        <source srcset="img/TeamSarahJasmine.webp" type="image/webp">
+                        <img class="hero__img img" src="img/TeamSarahJasmine.jpeg" alt="Sarah-Jasmine">
+                    </picture>
+                </div>
+                <div class="hero__content">
+                    <div class="hero__box">
+                        <div class="hero__title-box">
+                            <span class="hero__name">
+                                Sarah Jasmine
+                            </span>
+                            <span class="hero__position">
+                                CEO at Company
+                            </span>
+                        </div>
+                        <div class="hero__socials">
+                            <a class="hero__link" href="#">
+                                <svg class="hero__icon social-icon">
+                                    <use xlink:href="img/svg/sprite.svg#profileFacebook" />
+                                </svg>
+                            </a>
+                            <a class="hero__link" href="#">
+                                <svg class="hero__icon social-icon">
+                                    <use xlink:href="img/svg/sprite.svg#profileInstagram" />
+                                </svg>
+                            </a>
+                            <a class="hero__link" href="#">
+                                <svg class="hero__icon social-icon">
+                                    <use xlink:href="img/svg/sprite.svg#profileTwitter" />
+                                </svg>
+                            </a>
+                            <a class="hero__link" href="#">
+                                <svg class="hero__icon social-icon">
+                                    <use xlink:href="img/svg/sprite.svg#profileLinkedIn" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="hero__text hero__text_border text">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit sed do.
+                    </p>
+                    <div class="hero__text-box">
+                        <h2 class="hero__title title">
+                            Past experience
+                        </h2>
+                        <p class="hero__text text">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui. Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit sed do.
+                            <br>
+                            <br>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- hero section end -->
+
+        <!-- subscribe section staer -->
+        <subscribe-component></subscribe-component>
+        <!-- subscribe section end -->
+    </main>
+
+    <!-- footer section start -->
+    <special-footer></special-footer>
+    <!-- footer section end -->
+
+
+    <script src="components/subscribe/subscribe.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Ask Experts</title>
+    <link rel="stylesheet" href="scss/reapet-styles/reapet-styles.scss">
+    <link rel="stylesheet" href="scss/style/changelog.scss">
+</head>
+
+<body class="page__body">
+    <!-- loader start -->
+    <div class="loader-box">
+        <span class="loader"></span>
+    </div>
+    <!-- loader end -->
+
+    <!-- header section start -->
+    <special-header></special-header>
+    <!-- header section end -->
+
+    <main class="main">
+        <div class="main__overlay"></div>
+        <!-- hero section start -->
+        <section class="hero" style="background-image: url(img/UptadeBg.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover">
+            <div class="hero__container container">
+                <special-hero subtitle="Updates" title="Changelog"></special-hero>
+            </div>
+        </section>
+        <!-- hero section end -->
+
+        <!-- Version section start -->
+        <section class="version">
+            <div class="version__container container">
+                <img class="version__pattern img" src="img/Pattern.png" alt="Pattern">
+                <span class="version__green"></span>
+                <form class="version__form" action="#" method="post" enctype="multipart/form-data">
+                    <h2 class="version__title title">
+                        Version 01
+                    </h2>
+                    <input class="version__input input-reset" type="text" placeholder="Initial Consultalk Webflow Template Release">
+                </form>
+            </div>
+        </section>
+        <!-- Version section end -->
+    </main>
+
+    <!-- footer section start -->
+    <special-footer></special-footer>
+    <!-- footer section end -->
+
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Ask Experts</title>
+    <link rel="stylesheet" href="scss/reapet-styles/reapet-styles.scss">
+    <link rel="stylesheet" href="scss/style/blog.scss">
+</head>
+
+<body class="page__body">
+    <!-- loader start -->
+    <div class="loader-box">
+        <span class="loader"></span>
+    </div>
+    <!-- loader end -->
+
+    <!-- header section start -->
+    <special-header></special-header>
+    <!-- header section end -->
+
+    <main class="main">
+        <div class="main__overlay"></div>
+        <!-- hero section start -->
+        <section class="hero" style="background-image: url(img/BlogBg.jpeg);
+        background-image: image-set(url(img/BlogBg.webp) type('image/webp'));
+        background-repeat: no-repeat;
+        background-size: cover">
+            <div class="hero__container container">
+                <special-hero subtitle="Blog" title="Latest Blogs & News"></special-hero>
+            </div>
+        </section>
+        <!-- hero section end -->
+
+        <!-- blog section start -->
+        <section class="blog" style="background-color: #fff;">
+            <div class="blog__container container">
+                <div class="blog__content">
+                    <div class="blog__title-box">
+                        <span class="blog__subtitle second-subtitle">
+                            Blog
+                        </span>
+                        <h2 class="blog__title title">
+                            Take a look at our latest articles & resources
+                        </h2>
+                    </div>
+                    <a class="blog__link yellow-link" href="#">
+                        More News
+                    </a>
+                </div>
+                <ul class="blog__list list-reset">
+                    <item-blog img-url="img/blogImg1.jpeg"
+                        title="Consulting Fees Study 2019 (And How To Raise Your Rates)"
+                        small-img-url="img/JohnCarterIcon.jpeg"
+                        name ="John Carter"></item-blog>
+                    <item-blog img-url="img/blogImg2.jpeg"
+                        title="What is growth hacking and how to apply it to your startup"
+                        small-img-url="img/NayraMelsonIcon.jpeg"
+                        name ="Nayra Melson"></item-blog>
+                    <item-blog img-url="img/BlogImg3.jpeg" title="Five Steps to Implement Motivation in Management"
+                        small-img-url="img/JohnCarterIcon.jpeg"
+                        name ="John Carter"></item-blog>
+                    <item-blog img-url="img/BlogImg4.jpeg"
+                        title="Team Identifiers, Benefits, and How to Build One that Works"
+                        small-img-url="img/NayraMelsonIcon.jpeg"
+                        name ="Nayra Melson"></item-blog>
+                    <item-blog img-url="img/BlogImg5.jpeg" title="Professional Development Goals: Steps and Examples"
+                        small-img-url="img/JohnCarterIcon.jpeg"
+                        name ="John Carter"></item-blog>
+                    <item-blog img-url="img/BlogImg6.jpeg"
+                        title="A Guide on What to Bring on the First Day of Work"
+                        small-img-url="img/NayraMelsonIcon.jpeg"
+                        name ="Nayra Melson"></item-blog>
+                </ul>
+            </div>
+        </section>
+        <!-- blog section end -->
+
+        <!-- talk section start -->
+        <talk-component></talk-component>
+        <!-- talk section end -->
+    </main>
+
+
+    <!-- footer section start -->
+    <special-footer></special-footer>
+    <!-- footer section end -->
+
+    <script src="components/talk/talk.js"></script>
+    <script src="components/blog/blog.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

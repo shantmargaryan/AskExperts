@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Ask Experts</title>
+    <link rel="stylesheet" href="scss/reapet-styles/reapet-styles.scss">
+    <link rel="stylesheet" href="scss/style/team.scss">
+</head>
+
+<body class="page__body">
+    <!-- loader start -->
+    <div class="loader-box">
+        <span class="loader"></span>
+    </div>
+    <!-- loader end -->
+
+    <!-- header section start -->
+    <special-header></special-header>
+    <!-- header section end -->
+
+    <main class="main">
+        <div class="main__overlay"></div>
+        <!-- hero section start -->
+        <section class="hero" style="background-image: url(img/TeamBg.jpeg);
+        background-image: image-set(url(img/TeamBg.webp) type('image/webp'));
+            background-repeat: no-repeat;
+            background-size: cover">
+            <div class="hero__container container">
+                <special-hero subtitle="team" title="The Consultors"></special-hero>
+            </div>
+        </section>
+        <!-- hero section end -->
+
+        <!-- team section start -->
+        <section class="team">
+            <div class="team__container container">
+                <div class="team__content">
+                    <div class="team__text-box">
+                        <h2 class="team__title title">
+                            Meet Our Great Team
+                        </h2>
+                        <p class="team__text text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation.
+                        </p>
+                    </div>
+                    <a class="team__link black-link" href="#">
+                        Join our team
+                    </a>
+                </div>
+                <ul class="team__list list-reset">
+                    <team-item position="CEO at Company" name="Sarah Jasmine"
+                        img-url="img/TeamSarahJasmine.jpeg"></team-item>
+                    <team-item position="Manager" name="John Carter" img-url="img/TeamJohnCarter.jpeg"></team-item>
+                    <team-item position="CEO at Company" name="Daisy Stella"
+                        img-url="img/TeamDaisyStella.jpeg"></team-item>
+                    <team-item position="Manager" name="Maya Elizabeth"
+                        img-url="img/TeamMayaElizabeth.jpeg"></team-item>
+                    <team-item position="CEO at Company" name="Ryan Jackson"
+                        img-url="img/TeamRyanJackson.jpeg"></team-item>
+                    <team-item position="Manager" name="Lilly Victoria"
+                        img-url="img/TeamLillyVictoria.jpeg"></team-item>
+                </ul>
+            </div>
+        </section>
+        <!-- team section end -->
+
+        <!-- talk section start -->
+        <talk-component></talk-component>
+        <!-- talk section end -->
+    </main>
+
+    <!-- footer section start -->
+    <special-footer></special-footer>
+    <!-- footer section end -->
+
+
+    <script src="components/talk/talk.js" type="module"></script>
+    <script src="components/teamItem/teamItem.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

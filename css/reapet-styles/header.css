@@ -5,6 +5,15 @@
     background-color: rgba(27, 27, 27, 0.91);
 }
 
+.header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 9;
+    display: block;
+    background-color: #1b1b1b;
+}
+
 .header__container {
     display: flex;
     justify-content: space-between;
@@ -25,7 +34,7 @@
     justify-content: space-around;
     align-items: center;
     gap: 15px;
-    padding: 20px 5px;
+    padding: 20px 10px;
     background-color: #181818;
 }
 
@@ -63,4 +72,10 @@
 
 .header__social-icon {
     fill: #fff;
+}
+
+@media(min-width:1200px){
+    .header::after {
+        display: none;
+    }
 }

@@ -3,7 +3,6 @@ import { specialHero } from "../components/specialHero/hero.js";
 
 const header = document.querySelector(".header");
 const nav = document.querySelector(".nav");
-const burger = document.querySelector(".burger");
 const burgerLines = document.querySelectorAll(".burger__line");
 const overlay = document.querySelector(".main__overlay");
 

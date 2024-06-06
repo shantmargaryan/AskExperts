@@ -1,0 +1,147 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    min-height: 400px;
+    margin-bottom: 8%;
+    background-position: 50% 20%;
+}
+
+.hero__container {
+    margin: 0;
+}
+
+.project {
+    margin-bottom: 10%;
+}
+
+.project__picture {
+    display: flex;
+    justify-content: center;
+}
+
+.project__img {
+    border-radius: 20px;
+}
+
+.project__content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    transform: translateY(-60px);
+}
+
+.project__preview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+    max-width: 1000px;
+    padding: 4%;
+    border-radius: 30px;
+    background-color: #181818;
+}
+
+.project__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    width: 60%;
+}
+
+.project__strong {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.project__text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.project__text_bottom {
+    margin-bottom: 25px;
+    color: #595566;
+}
+
+.project__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project__box {
+    max-width: 780px;
+}
+
+.project__large-text {
+    margin-bottom: 40px;
+}
+
+.project__bottom-list {
+    margin-bottom: 60px;
+}
+
+.project__bottom-item {
+    display: flex;
+    align-items: center;
+}
+
+.project__bottom-item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.project__bottom-item::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    margin-right: 10px;
+    background-color: #595566;
+    border-radius: 50%;
+}
+
+.project__short-text {
+    font-weight: 400;
+    color: #595566;
+}
+
+.project__small-title {
+    margin-bottom: 25px;
+    font-size: 35px;
+}
+
+.project__bottom-img {
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+.more {
+    padding-bottom: 10%;
+}
+
+.more__title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.more__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px 25px;
+    margin-bottom: 50px;
+    background-color: #D9D9D9;
+}
+
+.more__link-box {
+    display: flex;
+    justify-content: center;
+}

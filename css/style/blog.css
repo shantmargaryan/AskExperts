@@ -1,0 +1,15 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    min-height: 500px;
+    background-position: 50% 25%;
+}
+
+.hero__container {
+    margin: 0;
+}
+
+.blog__title {
+    margin: 0;
+}

@@ -1,0 +1,42 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    min-height: 500px;
+    margin-bottom: 10%;
+    background-position: 50% 50%;
+    transition: background-position 0.4s;
+}
+
+.hero__container {
+    margin: 0;
+}
+
+.team {
+    padding-bottom: 10%;
+}
+
+.team__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.team__text-box {
+    max-width: 630px;
+}
+
+.team__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        background-position: 25% 10%;
+    }
+}

@@ -57,3 +57,19 @@ const loaderBox = document.querySelector(".loader-box");
 window.addEventListener("load", (event) => {
     loaderBox.classList.add("loader_hidden");
 })
+
+
+if (HTMLScriptElement.supports && HTMLScriptElement.supports("speculationrules")) {
+    const specScript = document.createElement("script");
+    specScript.type = "speculationrules";
+    const specRules = {
+        prerender: [
+            {
+                "urls": ["/", "/about.html", "/services.html", "/team.html", "/blog.html", "/contact.html"],
+                "eagerness": "immediate"
+            }
+        ],
+    };
+    specScript.textContent = JSON.stringify(specRules);
+    document.body.append(specScript);
+}
